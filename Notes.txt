@@ -1,0 +1,5 @@
+// Notes of Autowiring with XML 
+
+<bean  class="--" id="---" autowire="---"  ></bean>
+
+autowire types in XML : byName,byType

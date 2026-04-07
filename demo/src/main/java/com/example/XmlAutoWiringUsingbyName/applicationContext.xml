@@ -3,14 +3,13 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean class="com.example.XmlAutoWiringUsingbyName.Student" id="std" autowire="byName">
+    <bean class="com.example.XmlAutoWiringUsingbyName.Student" id="std">
         <property name="name" value="Bappi"/>
         <property name="rollno" value="3716" />
-        <!-- <property name="address" ref="addr"/> -->
+        <property name="address" ref="addr"/>
     </bean>
 
-    <bean class="com.example.XmlAutoWiringUsingbyName.Address" id="address">
-        <!-- byName auto wire achivrd ! for xml based autoconfiguration-->
+    <bean class="com.example.XmlAutoWiringUsingbyName.Address" id="addr">
         <property name="houseno" value="420" />
         <property name="city" value="Bombay" />
         <property name="pincode" value="436" />
