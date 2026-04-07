@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="com.example.XmlAutoWiringUsingbyName.Student" id="std" autowire="byName">
+        <property name="name" value="Bappi"/>
+        <property name="rollno" value="3716" />
+        <!-- <property name="address" ref="addr"/> -->
+    </bean>
+
+    <bean class="com.example.XmlAutoWiringUsingbyName.Address" id="address">
+        <!-- byName auto wire achivrd ! for xml based autoconfiguration-->
+        <property name="houseno" value="420" />
+        <property name="city" value="Bombay" />
+        <property name="pincode" value="436" />
+    </bean>
+    
+
+
+</beans>
