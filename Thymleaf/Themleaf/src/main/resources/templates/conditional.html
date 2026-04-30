@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Conditional Page</title>
+</head>
+<body>
+<h2>Conditional (th:if)</h2>
+<h3>
+
+<p th:if="${n1 > n2}">
+    <span th:text="${n1}+' is greater than ' + ${n2}"></span>
+
+</p>
+<p th:if="${n1<n2}">
+<span th:text="${n2}+' is greater than '+ ${n1}"></span>
+
+</p>
+
+</h3>
+
+</body>
+</html>
