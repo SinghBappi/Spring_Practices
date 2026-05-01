@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Thymleaf Page</title>
+</head>
+<body>
+
+
+<div th:if="${ErrorMsg}">
+    <h3 style="color: red;" th:text="${ErrorMsg}"></h3>
+</div>
+<h2>Login Page</h2>
+<form th:action="@{/loginForm}" th:object="${user}" method="post">
+<!--    Name: <input type="text"  id="" th:field="*{name}"> <br>-->
+    Email-id <input type="text"  id="" th:field="*{email}"> <br>
+    Password <input type="password" th:field="*{password}"><br>
+<!--    Phone no <input type="number" th:field="*{phoneno}"><br>-->
+    <input type="submit" value="Login" >
+
+
+
+</form>
+<a href="index.html">Home</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="regPage">Register Page</a>
+</body>
+</html>
