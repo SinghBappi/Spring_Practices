@@ -1,5 +1,10 @@
 package com.example.ioc.mobilo_sims;
 
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+
+@Component("jina")
+@Primary
 public class Jio implements Sim {
 
     @Override
